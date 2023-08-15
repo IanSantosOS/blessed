@@ -1,0 +1,57 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font: normal 14px arial;
+    text-align: center;
+    justify-content: center;
+    text-shadow: 0px 0px 10px black;
+}
+
+p, h1, h2, h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+table {
+    margin-top: 30px;
+    color: antiquewhite;
+    background-color: rgb(2, 2, 59);
+}
+
+caption {
+    margin: 10px;
+    color: black;
+}
+th {background-color: blueviolet;}
+td {background-color: darkcyan;}
+.empresas {background-color: rgb(255, 115, 0);}
+
+.pagina-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    margin: 30px;
+    padding: 14px;
+    font: normal 24px arial;
+    border-radius: 5px;
+    border: 3px outset black;
+    box-shadow: 0px 0px 10px black;
+    color: aqua;
+    background-color: red;
+}
+
+img {
+    margin: 30px;
+    width: 200px;
+}
+
+.titulo, .rodape {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(130, 200, 228);
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../img/tabuada-X.ico" type="image/x-icon">
+    <title>Tabuada Massa</title>
+</head>
+<body>
+    <h1>Tabuada Massa</h1>
+    <hr>
+
+    <label for="number">Digite um Número:</label>
+    <input type="number" id="numberInput">
+    <button id="enviar" onclick="calcularTabuada()">Enviar</button>
+
+    <table>
+        <caption id="titulo">Tabuada de 0</caption>
+        <tr>
+            <th>Num</th>
+            <th>X</th>
+            <th>0-10</th>
+            <th>=</th>
+            <th>Result</th>
+        </tr>
+        <tr id="tr00" onclick="copyToClipboard('tr00')">
+            <td class="col1">0</td>
+            <td class="col2">X</td>
+            <td class="col3">0</td>
+            <td class="col4">=</td>
+            <td class="col5">0</td>
+        </tr>
+        <tr id="tr01" onclick="copyToClipboard('tr01')">
+            <td class="col1">0</td>
+            <td class="col2">X</td>
+            <td class="col3">1</td>
+            <td class="col4">=</td>
+            <td class="col5">0</td>
+        </tr>
+        <tr id="tr02" onclick="copyToClipboard('tr02')">
+            <td class="col1">0</td>
+            <td class="col2">X</td>
+            <td class="col3">2</td>
+            <td class="col4">=</td>
+            <td class="col5">0</td>
+        </tr>
+        <tr id="tr03" onclick="copyToClipboard('tr03')">
+            <td class="col1">0</td>
+            <td class="col2">X</td>
+            <td class="col3">3</td>
+            <td class="col4">=</td>
+            <td class="col5">0</td>
+        </tr>
+        <tr id="tr04" onclick="copyToClipboard('tr04')">
+            <td class="col1">0</td>
+            <td class="col2">X</td>
+            <td class="col3">4</td>
+            <td class="col4">=</td>
+            <td class="col5">0</td>
+        </tr>
+        <tr id="tr05" onclick="copyToClipboard('tr05')">
+            <td class="col1">0</td>
+            <td class="col2">X</td>
+            <td class="col3">5</td>
+            <td class="col4">=</td>
+            <td class="col5">0</td>
+        </tr>
+        <tr id="tr06" onclick="copyToClipboard('tr06')">
+            <td class="col1">0</td>
+            <td class="col2">X</td>
+            <td class="col3">6</td>
+            <td class="col4">=</td>
+            <td class="col5">0</td>
+        </tr>
+        <tr id="tr07" onclick="copyToClipboard('tr07')">
+            <td class="col1">0</td>
+            <td class="col2">X</td>
+            <td class="col3">7</td>
+            <td class="col4">=</td>
+            <td class="col5">0</td>
+        </tr>
+        <tr id="tr08" onclick="copyToClipboard('tr08')">
+            <td class="col1">0</td>
+            <td class="col2">X</td>
+            <td class="col3">8</td>
+            <td class="col4">=</td>
+            <td class="col5">0</td>
+        </tr>
+        <tr id="tr09" onclick="copyToClipboard('tr09')">
+            <td class="col1">0</td>
+            <td class="col2">X</td>
+            <td class="col3">9</td>
+            <td class="col4">=</td>
+            <td class="col5">0</td>
+        </tr>
+        <tr id="tr10" onclick="copyToClipboard('tr10')">
+            <td class="col1">0</td>
+            <td class="col2">X</td>
+            <td class="col3">10</td>
+            <td class="col4">=</td>
+            <td class="col5">0</td>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

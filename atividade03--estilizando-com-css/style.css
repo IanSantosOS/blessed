@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root {
+    --positionWidthBox1: 45%;
+    --positionWidthBox2: 70%;
+    --positionWidthBox3: 20%;
+
+    --colorBox1: rgb(1, 1, 158);
+    --colorBox2: rgb(95, 4, 168);
+    --colorBox3: rgb(8, 207, 214);
+    --colorBox4: rgb(9, 78, 105);
+    --colorBox5: rgb(42, 6, 124);
+
+    --btnNormal: 
+
+}
+
+@keyframes movement {
+    0% {
+        transform: rotate(0deg);
+        left: var(--positionWidthBox1);
+        background-color: var(--colorBox1);
+    }
+    25% {
+        transform: rotate(180deg);
+        left: var(--positionWidthBox2);
+        background-color: var(--colorBox2);
+    }
+    30% {
+        transform: rotate(180deg);
+        left: var(--positionWidthBox2);
+        background-color: var(--colorBox2);
+    }
+    50% {
+        transform: rotate(0deg);
+        left: var(--positionWidthBox1);
+        background-color: var(--colorBox3);
+    }
+    75% {
+        transform: rotate(-180deg);
+        left: var(--positionWidthBox3);
+        background-color: var(--colorBox4);
+    }
+    80% {
+        transform: rotate(-180deg);
+        left: var(--positionWidthBox3);
+        background-color: var(--colorBox4);
+    }
+    100% {
+        transform: rotate(0deg);
+        left: var(--positionWidthBox1);
+        background-color: var(--colorBox5);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    background-color: rgb(224, 224, 224);
+}
+
+h1 { margin: 20px }
+p { margin: 15px }
+
+#content {
+    width: 100vw;
+    height: 45vh;
+    top: 50%;
+    left: 50%;
+}
+
+#btnAnimation {
+    transition: background-color ease-in-out 0.15s;
+    cursor: pointer;
+    user-select: none;
+    font-weight: bold;
+    align-items: center;
+    display:inline-flex;
+    padding: 5px;
+    padding-right: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    color: whitesmoke;
+}
+.play {
+    background-color: #8a2be2;
+    text-shadow: 2px 2px 2px #3c056e;
+}
+.stop {
+    background-color: rgb(228, 0, 0);
+    text-shadow: 2px 2px 2px rgb(59, 1, 1);
+}
+.play:hover { background-color: #6d0dc7 }
+.stop:hover { background-color: rgb(124, 8, 8) }
+
+#box {
+    position: absolute;
+    left: calc(50% - 5vw);
+    width: 10vw;
+    height: 10vw;
+    margin-top: 50px;
+    background-color: var(--colorBox1);
+}
+
+img {
+    margin: 30px;
+    width: calc(30vh - 2vw);
+}
+
+.titulo, .rodape {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(130, 200, 228);
+}
+.titulo { box-shadow: 0 3px black }
+.rodape {
+    position: absolute;
+    bottom: 0px;
+    box-shadow: 0 -2px black;
+}
+
+@media screen and (max-width: 688px) and (max-height: 1031px) {
+    @keyframes movement {
+        0% {
+            transform: rotate(0deg);
+            background-color: var(--colorBox1);
+        }
+        25% {
+            transform: rotate(90deg);
+            background-color: var(--colorBox2);
+        }
+        50% {
+            transform: rotate(180deg);
+            background-color: var(--colorBox3);
+        }
+        75% {
+            transform: rotate(270deg);
+            background-color: var(--colorBox4);
+        }
+        100% {
+            transform: rotate(360deg);
+            background-color: var(--colorBox5);
+        }
+    }
+
+    #box {
+        transform: translate(0);
+        width: 15vh;
+        height: 15vh;
+        left: calc(50% - 7.5vh);
+        top: calc(47% - 7.5vh);
+    }
+}

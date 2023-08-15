@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    background-color: rgb(224, 224, 224);
+}
+
+h1, label {
+    margin: 30px;
+    text-transform: capitalize;
+}
+hr { margin-bottom: 15px }
+label { margin-right: 5px }
+select { background-color: rgba(168, 29, 29, 0.486) }
+
+
+div { position: absolute }
+.bandeira {
+    position: relative;
+    height: 200px;
+    width: 300px;
+    margin: 30px;
+    border: 5px solid black;
+}
+
+#brasil { background-color: #009C37 }
+#belgica { background-color: #FDDA25 }
+#botswana { background-color: #6DA9D2 }
+#laos { background-color: #002868 }
+#monaco, #franca, #italia, #japao {
+    background-color: #fff;
+}
+
+.circulo {
+    position: absolute;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

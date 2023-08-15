@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font: normal 14px arial;
+}
+
+li {
+    margin-left: 80px;
+    margin-bottom: 5px;
+    list-style-type: disc;
+}
+
+p, h1, h2, h3 {
+    margin: 15px;
+    margin-left: 50px;
+}
+
+.pagina-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    margin: 30px;
+    padding: 14px;
+    font: normal 24px arial;
+    border-radius: 5px;
+    border: 3px outset black;
+    box-shadow: 0px 0px 10px black;
+    color: aqua;
+    background-color: red;
+}
+
+img {
+    margin: 30px;
+    width: 200px;
+}
+
+.titulo, .rodape {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(130, 200, 228);
+}
